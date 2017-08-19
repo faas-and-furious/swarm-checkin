@@ -1,0 +1,13 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  swarm_checkin:
+    lang: python
+    handler: ./swarm_checkin/
+    image: faas-swarm-checkin
+    environment:
+      oauth_token: 'YOUR_OWN_OAUTH_TOKEN'
+      # You can find the venue ID here: https://api.foursquare.com/v2/venues/search
+      venue_id: 'VENUE_ID'
