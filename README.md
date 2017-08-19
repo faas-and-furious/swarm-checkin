@@ -17,6 +17,7 @@ Build and deploy your stack using the following commands:
 
 ```
 $ faas-cli -action build -f ./stack.yml
+$ faas-cli -action push -f ./stack.yml (optional)
 $ faas-cli -action deploy -f ./stack.yml
 ```
 
